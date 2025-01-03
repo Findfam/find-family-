@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" Check list of lost and missed familiar members,friends in world wide">
+  <title>start searching </title>
+  <style>
+    /* Reset and General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color:darkgreen;
+      color: white;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.2rem;
+    }
+
+    /* About Section */
+    .about {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .about h2 {
+      font-size: 2rem;
+      color: #0078d7;
+      margin-bottom: 20px;
+    }
+    .about p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    /* Members Section */
+    .members {
+      margin: 40px 0;
+    }
+    .members h2 {
+      font-size: 2rem;
+      color: #0078d7;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .member-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .member-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+    }
+    .member-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .member-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+    .member-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Events Section */
+    .events {
+      margin: 40px 0;
+    }
+    .events h2 {
+      font-size: 2rem;
+      color: #0078d7;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .event-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .event-item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .event-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Call to Action */
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+      padding: 30px 20px;
+      background-color: #adff2f;
+      color: white;
+      border-radius: 8px;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .cta button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: white;
+      color: #800080;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .cta button:hover {
+      background-color: #8a2be2;
+      color: #fff000;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+    .footer a {
+      color: #333;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    
+
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: greenyellow;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="About.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="https://www.paypal.com/ncp/payment/X8WLMUQUQANJQ">Register </a>
+  <a href="Peoples.html">List of all peoples</a>
+  <a href="Contact Us.html">Contact Us </a>
+  
+</div>
+
+<div id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Home</span>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Welcome to List of All Peoples</h1>
+    <p>A place to Connect, to Check your Missed Family & Friends .</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about container">
+    <h2>How to Use This Page</h2>
+    <p>If you are searching your lost family ,friend,parents,childrens, click sign up button You'll be directed to paypal.</p>
+    <p>pay 5$ for registration after you will be directed to officially form, fill that form with you details and all details of missed person Your data kept secure.
+      After filling the form you will see all missed peoples in different countries ,Then choose your country and ckeck list of all names 
+      If you didn't found your missed person it is our mission to search her/him Then notify us on whatsapp If you find him or her
+ For any help talk with our team on our officially whatsapp account 
+  <!-- Members Section -->
+  <section class="members container">
+    <h2 style="color:red;"> Joined Now 00:01 ...</h2>
+    <div class="member-grid">
+      <div class="member-card">
+        <img src="C:\Find my family\images\white boy.jpg" alt="Member 1">
+        <h4>Andrew hnrey</h4>
+        <p>I'm searching my friends her name <b>Jeane sheiller</b></p>
+      </div>
+      <div class="member-card">
+        <img src="C:\Find my family\images\seth iradukunda sc.jpg" alt="Member 2">
+        <h4>Seth Trasisi</h4>
+        <p>I'm searching my sister <b>Umuhoza Clemantine</b> and my brother <b>Nshimiyimana Pierre</b>They were in Australia since 2016
+             but when they moved to America I missed they phone numbers ,Father's name BIRINDABAGABO TRASISI</p>
+      </div>
+      <div class="member-card">
+        <img src="C:\Find my family\images\old man.jpg" alt="Member 3">
+        <h4>Emily Davis</h4>
+        <p>I'm searching my Son <b> chris oracle<b> john</p>
+      </div>
+      <div class="member-card">
+        <img src="C:\Find my family\images\black woman.jpg" alt="Member 3">
+        <h4>Natukunda annet</h4>
+        <p>I'm searching my Husband <b>Tumwiine James</b></p>
+      </div>
+      <div class="member-card">
+        <img src="C:\Find my family\images\white girl.jpeg" alt="Member 3">
+        <h4>joy aquisant</h4>
+        <p>I'm searching my boyfriend <b>Peter kyhaliph</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events container">
+    <h2> How we are helping them to find these missed peoples ?</h2>
+    <div class="event-item">
+      <h4>Commparing  names</h4>
+      <p>Using the names  of missed person and searching person </p>
+    </div>
+    <div class="event-item">
+      <h4>Profile  Checking</h4>
+      <p>Checking all profile especially in continent noted by peoples</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Are there anyone who found her/his family ?</h2>
+    <p> Yes , many peoples world-wide founded they families and friends, Click button to start process</p>
+    <button><a href="https://www.paypal.com/ncp/payment/X8WLMUQUQANJQ">Start Now</a></button>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Find my family .Founder :Seth Iradukunda | All Rights Reserved. |
+      <button><a href="Privacy policy.html">Privacy Policy </a></button>
+    <button><a href="About.html">About  </a></button>
+    <button><a href="index.html">Back to Homepage </a></button> 
+    <button><a href="Contact Us.html">Contract Us</a></button>
+    <button><a href="Peoples.html">List of all peoples </a></button>
+    <button><a href="Services.html">Services  </a></button>
+  </footer>
+
+</body>
+</html>

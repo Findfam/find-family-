@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services of find my family world-wide">
+  <title>Our Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #663399;
+    }
+
+    header {
+      background: #adff2f;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #000000;
+    }
+
+    .service-card p {
+      margin-bottom: 1rem;
+      color: green;
+    }
+
+    .service-card a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #ffd700;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .service-card a:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: greenyellow;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="About.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="https://www.paypal.com/ncp/payment/X8WLMUQUQANJQ">Register </a>
+  <a href="Peoples.html">List of all peoples</a>
+  <a href="Contact Us.html">Contact Us </a>
+  
+</div>
+
+<div id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Home</span>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+  
+  <header>
+    <h1>Our Services</h1>
+    <p>Explore the range of services we offer to help you grow.</p>
+  </header>
+
+  <section>
+    <div class="services-container">
+      <!-- Service Card 1 -->
+      <div class="service-card">
+        <img src="C:\Find my family\images\web dev.jpg" alt="Service 1">
+        <h3>Web Development</h3>
+        <p>Build modern and responsive websites tailored to your needs.</p>
+        <a href="https://wa.link/054bj4">Contact us</a>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card">
+        <img src="C:\Find my family\images\tech training.jpeg" alt="Service 2">
+        <h3>Tech Training </h3>
+        <p>Information Technology training, mobile repairing software solutions and hardware .</p>
+        <a href="https://sites.google.com/view/igttechcollege/home">Learn More</a>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card">
+        <img src="C:\Find my family\images\ffww logo.jpg" alt="Service 3">
+        <h3>Find your family </h3>
+        <p>We help peoples to find they missed persons, friends ,parents,children,sisters,brothers etc...</p>
+        <a href="Peoples.html">Learn More</a>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card">
+        <img src="C:\Find my family\images\seo.png" alt="Service 4">
+        <h3>SEO Optimization</h3>
+        <p>Improve your search engine rankings and drive more traffic.</p>
+        <a href=https://wa.link/054bj4">Let talk</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Find my family .Founder :Seth Iradukunda | All Rights Reserved. |
+      <button><a href="Privacy policy.html">Privacy Policy </a></button>
+    <button><a href="About.html">About  </a></button>
+    <button><a href="index.html">Back to Homepage </a></button> 
+    <button><a href="Contact Us.html">Contract Us</a></button>
+    <button><a href="Peoples.html">List of all peoples </a></button>
+    <button><a href="Services.html">Services  </a></button>
+  </footer>
+
+</body>
+</html>
