@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website with YouTube Video</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+
+        header {
+            background-color: #333; /* Dark gray header */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: greenyellow;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+        }
+
+        .video-container {
+            width: 80%; /* Adjust video width as needed */
+            max-width: 800px; /* Set a maximum width */
+            margin-bottom: 20px; /* Add space below the video */
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            width: 80%; /* Adjust content width as needed */
+            max-width: 800px; /* Set a maximum width */
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333; /* Dark gray footer */
+            color: #fff; /* White text color */
+            padding: 10px;
+            text-align: center;
+            position: fixed; /* Fixed to the bottom of the viewport */
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="About.html">About</a>
+  <a href="Services.html">Services</a>
+  <a href="https://www.paypal.com/ncp/payment/X8WLMUQUQANJQ">Register Premium  </a>
+  <a href="https://sites.google.com/view/formffww/home">Register Free </a>
+  <a href="Peoples.html">List of all peoples</a>
+  <a href="Contact Us.html">Contact Us </a>
+    <a href="https://sites.google.com/view/ffwwparteners-program/home">Get life partner</a>
+  </div>
+  
+  <div id="main">
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Home</span>
+  </div>
+  
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    <header>
+        <h1>Welcome to videos</h1>
+        <p>YouTube video for guidance </p>
+    </header>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PKpkw8Nn-FM?si=Uw4dChJvpEqCS0Cf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <footer class="footer">
+        <p>&copy; 2025 Find my family .Founder :Seth Iradukunda | All Rights Reserved. |
+          <button><a href="Privacy policy.html">Privacy Policy </a></button>
+        <button><a href="About.html">About  </a></button>
+        <button><a href="index.html">Back to Homepage </a></button> 
+        <button><a href="Contact Us.html">Contract Us</a></button>
+        <button><a href="Peoples.html">List of all peoples </a></button>
+        <button><a href="Services.html">Services  </a></button>
+      </footer>
+
+</body>
+</html>
